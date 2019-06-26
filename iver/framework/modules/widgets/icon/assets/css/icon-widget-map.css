@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Icon widget style - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+.qodef-icon-widget-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.qodef-icon-widget-holder > * {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
+.qodef-icon-widget-holder .qodef-icon-text {
+  padding: 0 0 0 10px;
+}
+
+.qodef-icon-widget-holder .qodef-icon-text.qodef-no-icon {
+  padding: 0;
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-icon-widget-holder {
+  color: #333 !important;
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-icon-widget-holder:hover {
+  color: rgba(51, 51, 51, 0.8) !important;
+}
+
+.qodef-light-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-icon-widget-holder {
+  color: #fff !important;
+}
+
+.qodef-light-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-icon-widget-holder:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* ==========================================================================
+   Icon widget style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=icon-widget-map.css.map */

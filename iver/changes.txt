@@ -1,0 +1,34 @@
+1.2.1
+- Updated WPBakery Page Builder to 6.0.1
+- Improved theme security
+- Minor improvements
+
+1.2
+- Added WooCommerce 3.6.2 compatibility
+- Updated Iver Core to 1.2
+- Improved import functionality
+- Improved theme security
+
+1.1
+- Updated Iver Core Plugin 1.1
+- Updated Iver Instagram Feed Plugin to version 1.0.1
+- Updated Iver Twitter Feed Plugin to version 1.0.1
+- Updated Iver Membership Plugin to version 1.0.2
+- Updated Iver Checkout Plugin to version 1.0.1
+- Updated Iver Hotel Plugin to version 1.0.3
+- Updated Revolution Slider 5.4.8.3
+- Updated WooCommerce to 3.5.7
+- Updated WPBakery to 5.7
+- Updated pot file
+- Improved framework files
+
+1.0.2
+- Updated Iver Hotel to version 1.0.2
+- Fixed hotel select2 dependency without google map
+
+1.0.1
+- Updated Iver Hotel to version 1.0.1
+- Updated Iver Core to version 1.0.1
+- Updated Iver Membership to version 1.0.1
+- Fixed reservation form for hotel room
+- Fixed hotel membership plugin

@@ -1,0 +1,289 @@
+/* ==========================================================================
+   Side area styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+# Side area style - begin
+========================================================================== */
+.qodef-light-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-side-menu-button-opener,
+.qodef-light-header .qodef-top-bar .qodef-side-menu-button-opener {
+  color: #fff !important;
+}
+
+.qodef-light-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-side-menu-button-opener.opened, .qodef-light-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-side-menu-button-opener:hover,
+.qodef-light-header .qodef-top-bar .qodef-side-menu-button-opener.opened,
+.qodef-light-header .qodef-top-bar .qodef-side-menu-button-opener:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-side-menu-button-opener,
+.qodef-dark-header .qodef-top-bar .qodef-side-menu-button-opener {
+  color: #333 !important;
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-side-menu-button-opener.opened, .qodef-dark-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-side-menu-button-opener:hover,
+.qodef-dark-header .qodef-top-bar .qodef-side-menu-button-opener.opened,
+.qodef-dark-header .qodef-top-bar .qodef-side-menu-button-opener:hover {
+  color: rgba(51, 51, 51, 0.8) !important;
+}
+
+.qodef-side-menu-button-opener {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 5px;
+  margin: 2px 0 0;
+}
+
+.qodef-side-menu-button-opener .qodef-sm-lines {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  width: 23px;
+  height: 19px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.qodef-side-menu-button-opener .qodef-sm-lines .qodef-sm-line {
+  width: 4px;
+  height: 4px;
+  margin: 0 1px;
+  background-color: currentColor;
+  -webkit-transition: background-color 0.23s, opacity 0.3s, transform 0.23s;
+  -moz-transition: background-color 0.23s, opacity 0.3s, transform 0.23s;
+  transition: background-color 0.23s, opacity 0.3s, transform 0.23s;
+}
+
+.qodef-side-menu-button-opener .qodef-side-menu-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 8px 0 0;
+  color: currentColor;
+}
+
+.qodef-side-menu-button-opener .qodef-side-menu-icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.qodef-side-menu-button-opener.opened {
+  color: #000;
+}
+
+.qodef-side-menu-button-opener:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.qodef-side-menu {
+  position: fixed;
+  top: 0;
+  right: -552px;
+  width: 552px;
+  height: 100%;
+  min-height: 100%;
+  padding: 104px 69px 36px 71px;
+  background-color: #000;
+  text-align: left;
+  overflow: hidden;
+  visibility: hidden;
+  z-index: 9999;
+  -webkit-backface-visibility: hidden;
+  box-sizing: border-box;
+  box-shadow: -3px 0 3px rgba(0, 0, 0, 0.04);
+  -webkit-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.qodef-side-menu a.qodef-close-side-menu {
+  position: absolute;
+  top: 28px;
+  right: 48px;
+  display: block;
+  z-index: 1000;
+  color: #fff;
+  font-size: 22px;
+}
+
+.qodef-side-menu a.qodef-close-side-menu:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.admin-bar .qodef-side-menu a.qodef-close-side-menu {
+  top: 68px;
+}
+
+/* ==========================================================================
+# Side area style - end
+========================================================================== */
+/* ==========================================================================
+# Side area slides over content style - begin
+========================================================================== */
+.qodef-right-side-menu-opened .qodef-wrapper,
+.qodef-right-side-menu-opened footer.qodef-footer-uncover,
+.qodef-right-side-menu-opened .qodef-fixed-wrapper.fixed,
+.qodef-right-side-menu-opened .qodef-sticky-header,
+.qodef-right-side-menu-opened .mobile-header-appear .qodef-mobile-header-inner {
+  left: 0;
+}
+
+.qodef-side-menu-slide-from-right .qodef-wrapper {
+  background-color: #fff;
+  position: relative;
+  z-index: 1000;
+  -webkit-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.qodef-side-menu-slide-from-right .qodef-wrapper .qodef-cover {
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-transition: opacity 0.2s ease-in-out, z-index 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out, z-index 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out, z-index 0.2s ease-in-out;
+}
+
+.qodef-side-menu-slide-from-right .qodef-sticky-header,
+.qodef-side-menu-slide-from-right .qodef-fixed-wrapper.fixed {
+  -webkit-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.qodef-side-menu-slide-from-right footer.qodef-footer-uncover {
+  -webkit-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.qodef-side-menu-slide-from-right.qodef-right-side-menu-opened .qodef-cover {
+  z-index: 1002;
+  opacity: 1;
+}
+
+.qodef-side-menu-slide-from-right.qodef-right-side-menu-opened .qodef-side-menu {
+  right: 0;
+  visibility: visible;
+}
+
+/* ==========================================================================
+# Side area slides over content style - end
+========================================================================== */
+/* ==========================================================================
+# Side area uncovering - begin
+========================================================================== */
+.qodef-side-area-uncovered-from-content.qodef-right-side-menu-opened .qodef-wrapper,
+.qodef-side-area-uncovered-from-content.qodef-right-side-menu-opened footer.qodef-footer-uncover,
+.qodef-side-area-uncovered-from-content.qodef-right-side-menu-opened .qodef-sticky-header,
+.qodef-side-area-uncovered-from-content.qodef-right-side-menu-opened .qodef-fixed-wrapper.fixed,
+.qodef-side-area-uncovered-from-content.qodef-right-side-menu-opened .qodef-mobile-header-inner,
+.qodef-side-area-uncovered-from-content.qodef-right-side-menu-opened .mobile-header-appear .qodef-mobile-header-inner {
+  left: -405px;
+}
+
+.qodef-side-area-uncovered-from-content .qodef-side-menu {
+  right: 0;
+  z-index: 90;
+}
+
+.qodef-side-area-uncovered-from-content .qodef-sticky-header,
+.qodef-side-area-uncovered-from-content .qodef-fixed-wrapper.fixed {
+  -webkit-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/* ==========================================================================
+# Side area uncovering - end
+========================================================================== */
+/* ==========================================================================
+# Side area slides with content style - begin
+========================================================================== */
+.qodef-side-menu-slide-with-content {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+  -webkit-overflow-scrolling: auto !important;
+  -webkit-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.qodef-side-menu-slide-with-content .qodef-side-menu {
+  visibility: visible;
+}
+
+.qodef-side-menu-slide-with-content footer.qodef-footer-uncover,
+.qodef-side-menu-slide-with-content .qodef-wrapper {
+  -webkit-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.qodef-side-menu-slide-with-content .qodef-sticky-header,
+.qodef-side-menu-slide-with-content .qodef-fixed-wrapper.fixed,
+.qodef-side-menu-slide-with-content .qodef-mobile-header-inner {
+  -webkit-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.qodef-side-menu-slide-with-content.qodef-side-menu-open .qodef-wrapper,
+.qodef-side-menu-slide-with-content.qodef-side-menu-open footer.qodef-footer-uncover,
+.qodef-side-menu-slide-with-content.qodef-side-menu-open .qodef-sticky-header,
+.qodef-side-menu-slide-with-content.qodef-side-menu-open .qodef-fixed-wrapper,
+.qodef-side-menu-slide-with-content.qodef-side-menu-open .qodef-mobile-header-inner {
+  left: -552px;
+}
+
+.qodef-side-menu-slide-with-content.qodef-side-menu-open .qodef-side-menu {
+  right: 0;
+}
+
+/* ==========================================================================
+# Side area slides with content style - end
+========================================================================== */
+/* ==========================================================================
+# Side area responsive style - begin
+========================================================================== */
+@media only screen and (max-width: 1366px) {
+  .qodef-side-menu {
+    padding: 73px 69px 36px 71px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .qodef-side-menu-slide-from-right .qodef-side-menu {
+    padding: 60px 42px 30px 41px;
+  }
+}
+
+/* ==========================================================================
+# Side area style - end
+========================================================================== */
+/* ==========================================================================
+   Side area styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=sidearea-map.css.map */
