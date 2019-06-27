@@ -21,8 +21,24 @@ Template: iver
     url('../../wp-content/uploads/2019/06/5-1.png') !important;
 }
 
+.qodef-page-footer .qodef-icon-widget-holder {
+	margin: 0 40px;
+}
+
+/* Footer edit */
+.qodef-column-content {
+	color: red !important;
+	margin-bottom: -110px;
+}
+
+/* items in "core values" */
+.qodef-eh-item-content {
+	padding: 0 12.5% 0 12.5% !important;
+	text-align: justify;
+}
+
 /*
-@ HOSPITALITY
+@ HOSPITALITY PAGE ELEMENTS WITH CUSTOM CSS CLASS
 */
 
 .hospitality-aboutus {
@@ -63,16 +79,70 @@ Template: iver
 	max-width: 100px;
 }
 
+.hospitality-quote-image {
+	height: 100px;
+	width: 100px;
+	max-height: 100px;
+	max-width: 100px;
+}
+
 .hospitality-contactus {
 	padding-top: 90px;
 	padding-bottom: 100px;
 }
 
-.hospitality-footer-logos img {
+/*.hospitality-contactus .hospitality-contactus-right {
+	position: relative;
+	height: 320px;
+	max-height: 320px;
+}
+
+.hospitality-contactus .hospitality-contactus-right .vc_row {
+	position: absolute;
+	bottom: 0;
+}*/
+
+.hospitality-footer-logos
+img {
 	display: inline !important;
 	margin-left: 20px;
 	margin-right: 20px;
 }
+
 /*
 @@ HOSPITALITY
 */
+
+@media only screen and (max-width: 1400px) {
+	.hospitality-aboutus-content {
+		font-size: 11px;
+	}
+}
+
+@media only screen and (max-width: 1201px) {
+	.hospitality-aboutus
+	.vc_column_container {
+		width: 100%;
+	}
+
+	.hospitality-aboutus-content {
+		font-size: 16px;
+	}
+
+	.hospitality-contactus
+	.hospitality-contactus-right,
+	.hospitality-contactus
+	.hospitality-contactus-left {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.qodef-eh-item-content {
+		padding: 0 !important;
+		text-align: justify;
+	}
+}
+@media only screen and (max-width: 768px) {
+	
+}
