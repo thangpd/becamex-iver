@@ -1,4 +1,4 @@
-/*
+
 Theme Name: Iver Child
 Theme URI: http://iver.select-themes.com
 Description: A child theme of Iver Theme
@@ -10,31 +10,24 @@ Template: iver
 */
 
 /* Separate line: icon - text; */
-.qodef-iwt.qodef-iwt-icon-top .qodef-iwt-content .qodef-iwt-title-text:after {
+.hospitality-corevalue-content 
+.qodef-iwt.qodef-iwt-icon-top 
+.qodef-iwt-content 
+.qodef-iwt-title-text:after {
     border: 2px solid #fff;
     width: 60px;
 }
 
-/* quote image */
-
-.qodef-testimonial-quote {
-    url('../../wp-content/uploads/2019/06/5-1.png') !important;
-}
-
-.qodef-page-footer .qodef-icon-widget-holder {
-	margin: 0 40px;
-}
-
 /* Footer edit */
 .qodef-column-content {
-	color: red !important;
 	margin-bottom: -110px;
 }
 
-/* items in "core values" */
-.qodef-eh-item-content {
-	padding: 0 12.5% 0 12.5% !important;
-	text-align: justify;
+/* Padding of core values content */
+.hospitality-corevalue-content .qodef-eh-item-content {
+	padding: 0 !important;
+	/*padding-left: 0 !important;
+	padding-right: 0 !important;*/
 }
 
 /*
@@ -49,6 +42,16 @@ Template: iver
 	padding-bottom: 80px;
 }
 
+.hospitality-corevalue-content {
+	padding-left: 1px;
+}
+
+.hospitality-corevalue-content
+img {
+	width: 50px;
+	height: 50px;
+}
+
 .hospitality-secondhome {
 	padding-top: 80px;
 	padding-bottom: 80px;
@@ -61,7 +64,7 @@ Template: iver
 
 .hospitality-comment-wrap, 
 .hospitality-commnent {
-	margin-top: 80px;
+	margin-top: 70px;
 	margin-bottom: 40px;
 }
 
@@ -84,23 +87,13 @@ Template: iver
 	width: 100px;
 	max-height: 100px;
 	max-width: 100px;
+	margin-top: 10%;
 }
 
 .hospitality-contactus {
 	padding-top: 90px;
 	padding-bottom: 100px;
 }
-
-/*.hospitality-contactus .hospitality-contactus-right {
-	position: relative;
-	height: 320px;
-	max-height: 320px;
-}
-
-.hospitality-contactus .hospitality-contactus-right .vc_row {
-	position: absolute;
-	bottom: 0;
-}*/
 
 .hospitality-footer-logos
 img {
@@ -113,13 +106,19 @@ img {
 @@ HOSPITALITY
 */
 
-@media only screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
 	.hospitality-aboutus-content {
 		font-size: 11px;
 	}
+
+	/* Space between infos below the 4 logos */
+	.qodef-page-footer
+	.qodef-icon-widget-holder {
+	margin: 0 30px;
+	}
 }
 
-@media only screen and (max-width: 1201px) {
+@media (max-width: 1201px) {
 	.hospitality-aboutus
 	.vc_column_container {
 		width: 100%;
@@ -137,12 +136,32 @@ img {
 	}
 }
 
-@media only screen and (max-width: 992px) {
+@media (max-width: 992px) {
 	.qodef-eh-item-content {
 		padding: 0 !important;
 		text-align: justify;
 	}
 }
-@media only screen and (max-width: 768px) {
-	
+
+@media (max-width: 768px) {
+	.hospitality-contactus-right
+	.vc_column_container {
+		width: 50%;
+		float: left;
+	}
+}
+
+@media (max-width: 667px){
+	.hospitality-contactus-right
+	.vc_column_container {
+		width: 100%;
+		float: left;
+	}
+}
+
+/*@media (min-width: 667px) {
+	.hospitality-contactus-newcity,
+	.hospitality-contactus-thudaumot {
+		width: 50% !important;
+	}
 }
