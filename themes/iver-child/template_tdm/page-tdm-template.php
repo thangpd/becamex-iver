@@ -2,7 +2,7 @@
 
 global $post;
 $post_slug      = $post->post_name;
-$blog_detail    = get_blog_details( get_current_blog_id() );
+
 $childtheme_uri = str_replace( 'tdm/', '', get_stylesheet_directory_uri() );
 
 $uri_image=$childtheme_uri . '/assets/images/' . $post_slug . '_tdm.jpg';
@@ -20,7 +20,7 @@ $uri_image=$childtheme_uri . '/assets/images/' . $post_slug . '_tdm.jpg';
         <area target="_self" alt="Deal &amp; Packages" title="Deal &amp; Packages" href="<?php echo home_url().'/deals-packages'; ?>"
               coords="642,52,844,90" shape="rect">
         <area target="_self" alt="Dining" title="Dining" href="<?php echo home_url().'/dining'; ?>" coords="856,55,948,92" shape="rect">
-        <area target="_self" alt="Experience" title="Experience" href="<?php echo home_url().'/experience'; ?>" coords="960,57,1095,84"
+        <area target="_self" alt="Experience" title="Experience" href="<?php echo home_url().'/experiences'; ?>" coords="960,57,1095,84"
               shape="rect">
         <area target="_self" alt="Events" title="Events" href="<?php echo home_url().'/events'; ?>" coords="1104,53,1200,87" shape="rect">
         <area target="_self" alt="Photos" title="Photos" href="<?php echo home_url().'/photos'; ?>" coords="1217,56,1311,84" shape="rect">
