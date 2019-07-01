@@ -15,7 +15,7 @@ $uri_image=$childtheme_uri . '/assets/images/' . $post_slug . '_tdm.jpg';
          usemap="#image-map">
 
     <map name="image-map">
-        <area target="_self" alt="Room &amp; Suites" title="Room &amp; Suites" href="<?php echo home_url().'/rooms'; ?>"
+        <area target="_self" alt="Room &amp; Suites" title="Room &amp; Suites" href="<?php echo home_url().'/rooms-suites'; ?>"
               coords="629,92,446,53" shape="rect">
         <area target="_self" alt="Deal &amp; Packages" title="Deal &amp; Packages" href="<?php echo home_url().'/deals-packages'; ?>"
               coords="642,52,844,90" shape="rect">
