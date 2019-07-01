@@ -6,11 +6,11 @@ class IverSelectIconsFontAwesome implements iIverSelectIconCollection {
 	public $param;
 	public $styleUrl;
 
-	function __construct($title_label = "", $param = "") {
-		$this->icons = array();
+	function __construct( $title_label = "", $param = "" ) {
+		$this->icons       = array();
 		$this->socialIcons = array();
-		$this->title = $title_label;
-		$this->param = $param;
+		$this->title       = $title_label;
+		$this->param       = $param;
 		$this->setIconsArray();
 		$this->setSocialIconsArray();
 		$this->styleUrl = SELECT_FRAMEWORK_ICONS_ROOT . '/font-awesome/css/fontawesome-all.min.css';
@@ -20,15 +20,15 @@ class IverSelectIconsFontAwesome implements iIverSelectIconCollection {
 		$this->icons = $this->getNewIconsArray();
 	}
 
-    /**
-     * Checks if icon collection has social icons
-     * @return mixed
-     */
-    public function hasSocialIcons() {
-        return true;
-    }
+	/**
+	 * Checks if icon collection has social icons
+	 * @return mixed
+	 */
+	public function hasSocialIcons() {
+		return true;
+	}
 
-    public function setSocialIconsArray() {
+	public function setSocialIconsArray() {
 		$this->socialIcons = $this->getNewIconsArray( true );
 	}
 
@@ -39,11 +39,11 @@ class IverSelectIconsFontAwesome implements iIverSelectIconCollection {
 	public function getSocialIconsArray() {
 		return $this->socialIcons;
 	}
-	
+
 	public function getSocialIconsArrayVC() {
 		return array_flip( $this->getSocialIconsArray() );
 	}
-	
+
 	/*
 	 * Function will return new FontAwesome icons array
 	 *
@@ -56,30 +56,30 @@ class IverSelectIconsFontAwesome implements iIverSelectIconCollection {
 		global $wp_filesystem;
 		WP_Filesystem();
 
-		$icons = json_decode( $wp_filesystem->get_contents( SELECT_FRAMEWORK_ICONS_ROOT_DIR . '/font-awesome/icons.json' ) );
-
+		$icons      = json_decode( $wp_filesystem->get_contents( SELECT_FRAMEWORK_ICONS_ROOT_DIR . '/font-awesome/icons.json' ) );
 		$iconsArray = array( '' => '' );
-		foreach ( $icons as $key => $value ) {
-			$iconLabel = ucwords( str_replace( '-', ' ', $value->label ) );
+		if ( ! empty( $icons ) ) {
+			foreach ( $icons as $key => $value ) {
+				$iconLabel = ucwords( str_replace( '-', ' ', $value->label ) );
 
-			if ( $brandsIcons ) {
-				if ( in_array( 'brands', $value->styles ) ) {
-					$iconsArray[ 'fab fa-' . $key ] = $iconLabel;
+				if ( $brandsIcons ) {
+					if ( in_array( 'brands', $value->styles ) ) {
+						$iconsArray[ 'fab fa-' . $key ] = $iconLabel;
+					}
+				} else {
+					$iconsArray[ $iconLabel ] = ( in_array( 'brands', $value->styles ) ? 'fab' : 'fa' ) . ' fa-' . $key;
 				}
-			} else {
-				$iconsArray[ $iconLabel ] = ( in_array( 'brands', $value->styles ) ? 'fab' : 'fa' ) . ' fa-' . $key;
 			}
 		}
-
 		return $iconsArray;
 	}
-	
+
 	public function render( $icon, $params = array() ) {
 		$html = '';
 		extract( $params );
 		$iconAttributesString = '';
 		$iconClass            = '';
-		
+
 		if ( isset( $icon_attributes ) && count( $icon_attributes ) ) {
 			foreach ( $icon_attributes as $icon_attr_name => $icon_attr_val ) {
 				if ( $icon_attr_name === 'class' ) {
@@ -90,7 +90,7 @@ class IverSelectIconsFontAwesome implements iIverSelectIconCollection {
 				}
 			}
 		}
-		
+
 		if ( isset( $before_icon ) && $before_icon !== '' ) {
 			$beforeIconAttrString = '';
 			if ( isset( $before_icon_attributes ) && count( $before_icon_attributes ) ) {
@@ -98,57 +98,57 @@ class IverSelectIconsFontAwesome implements iIverSelectIconCollection {
 					$beforeIconAttrString .= $before_icon_attr_name . '="' . $before_icon_attr_val . '" ';
 				}
 			}
-			
+
 			$html .= '<' . $before_icon . ' ' . $beforeIconAttrString . '>';
 		}
-		
+
 		$html .= '<i class="qodef-icon-font-awesome ' . $icon . ' ' . $iconClass . '" ' . $iconAttributesString . '></i>';
-		
+
 		if ( isset( $before_icon ) && $before_icon !== '' ) {
 			$html .= '</' . $before_icon . '>';
 		}
-		
+
 		return $html;
 	}
 
 	public function getSearchIcon() {
 
-		return $this->render('fa fa-search');
+		return $this->render( 'fa fa-search' );
 	}
 
 	public function getSearchClose() {
 
-		return $this->render('fa fa-times');
+		return $this->render( 'fa fa-times' );
 	}
 
 	public function getDropdownCartIcon() {
 
-		return $this->render('fa fa-shopping-cart');
+		return $this->render( 'fa fa-shopping-cart' );
 	}
 
 	public function getMenuIcon() {
 
-		return $this->render('fa fa-bars');
+		return $this->render( 'fa fa-bars' );
 	}
 
 	public function getMenuCloseIcon() {
 
-		return $this->render('fa fa-times');
+		return $this->render( 'fa fa-times' );
 	}
 
 	public function getBackToTopIcon() {
 
-		return $this->render('fa fa-angle-up');
+		return $this->render( 'fa fa-angle-up' );
 	}
 
 	public function getMobileMenuIcon() {
 
-		return $this->render('fa fa-bars');
+		return $this->render( 'fa fa-bars' );
 	}
 
 	public function getQuoteIcon() {
 
-		return $this->render('fa fa-quote-left');
+		return $this->render( 'fa fa-quote-left' );
 	}
 
 	public function getFacebookIcon() {
