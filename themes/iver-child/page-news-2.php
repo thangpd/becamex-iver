@@ -27,8 +27,8 @@
 	    <area target="" alt="Title 2" title="Title 2" href="<?php echo home_url( '/news-single' ); ?>" coords="221,2462,1083,2530" shape="0">
 	    <area target="" alt="Detail 2" title="Detail 2" href="<?php echo home_url( '/news-single' ); ?>" coords="223,2741,332,2775" shape="0">
 	    <area target="" alt="BH Logo footer" title="BH Logo footer" href="" coords="857,3057,1067,3165" shape="0">
-	    <area target="" alt="NC logo" title="NC logo" href="" coords="682,3182,819,3282" shape="0">
-	    <area target="" alt="TDM Logo" title="TDM Logo" href="" coords="835,3184,966,3284" shape="0">
+	    <area target="" alt="NC logo" title="NC logo" href="<?php echo home_url( '/newcity' ); ?>" coords="682,3182,819,3282" shape="0">
+	    <area target="" alt="TDM Logo" title="TDM Logo" href="<?php echo home_url( '/tdm' ); ?>" coords="835,3184,966,3284" shape="0">
 	    <area target="" alt="Coffee logo" title="Coffee logo" href="" coords="978,3186,1131,3282" shape="0">
 	    <area target="" alt="Square logo" title="Square logo" href="" coords="1143,3186,1250,3280" shape="0">
 	    <area target="" alt="Info 1" title="Info 1" href="" coords="368,3338,565,3389" shape="0">

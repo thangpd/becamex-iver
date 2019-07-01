@@ -21,8 +21,8 @@
 	    <area target="" alt="Apply Chef" title="Apply Chef" href="" coords="169,3249,352,3330" shape="0">
 	    <area target="" alt="Apply PT" title="Apply PT" href="" coords="970,3887,1153,3966" shape="0">
 	    <area target="" alt="Logo Hospitality Footer" title="Logo Hospitality Footer" href="" coords="853,4364,1057,4484" shape="0">
-	    <area target="" alt="Logo NC Footer" title="Logo NC Footer" href="" coords="684,4495,829,4601" shape="0">
-	    <area target="" alt="Logo TDM Footer" title="Logo TDM Footer" href="" coords="833,4493,974,4601" shape="0">
+	    <area target="" alt="Logo NC Footer" title="Logo NC Footer" href="<?php echo home_url( '/newcity' ); ?>" coords="684,4495,829,4601" shape="0">
+	    <area target="" alt="Logo TDM Footer" title="Logo TDM Footer" href="<?php echo home_url( '/tdm' ); ?>" coords="833,4493,974,4601" shape="0">
 	    <area target="" alt="Coffee Footer" title="Coffee Footer" href="" coords="980,4493,1139,4603" shape="0">
 	    <area target="" alt="Square Footer" title="Square Footer" href="" coords="1145,4493,1254,4605" shape="0">
 	    <area target="" alt="Info footer 1" title="Info footer 1" href="" coords="555,4704,376,4657" shape="0">

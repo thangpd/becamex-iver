@@ -16,13 +16,13 @@
 	    <area target="" alt="" title="explore binh duong" href="<?php echo home_url( '/explore-binh-duong' ); ?>" coords="1220,61,1453,101" shape="0">
 	    <area target="" alt="" title="wellness" href="<?php echo home_url( '/wellness' ); ?>" coords="1467,61,1596,97" shape="0">
 	    <area target="" alt="" title="info NC" href="" coords="296,972,632,1032" shape="0">
-	    <area target="" alt="" title="find now NC" href="" coords="292,1197,451,1257" shape="0">
+	    <area target="" alt="" title="find now NC" href="<?php echo home_url( '/newcity' ); ?>" coords="292,1197,451,1257" shape="0">
 	    <area target="" alt="" title="info TDM" href="" coords="970,1543,1348,1601" shape="0">
-	    <area target="" alt="" title="find now TDM" href="" coords="968,1768,1125,1831" shape="0">
+	    <area target="" alt="" title="find now TDM" href="<?php echo home_url( '/tdm' ); ?>" coords="968,1768,1125,1831" shape="0">
 	    <area target="" alt="" title="map" href="" coords="28,2094,1914,2613" shape="0">
 	    <area target="" alt="" title="logo BH footer" href="<?php echo home_url( '/' ); ?>" coords="857,2776,1061,2880" shape="0">
-	    <area target="" alt="" title="NC Logo" href="" coords="678,2890,819,3007" shape="0">
-	    <area target="" alt="" title="TDM Logo" href="" coords="835,2898,968,2999" shape="0">
+	    <area target="" alt="" title="NC Logo" href="<?php echo home_url( '/newcity' ); ?>" coords="678,2890,819,3007" shape="0">
+	    <area target="" alt="" title="TDM Logo" href="<?php echo home_url( '/tdm' ); ?>" coords="835,2898,968,2999" shape="0">
 	    <area target="" alt="" title="Coffee Logo" href="" coords="984,2901,1137,3001" shape="0">
 	    <area target="" alt="" title="Square Logo" href="" coords="1143,2896,1240,3007" shape="0">
 	    <area target="" alt="" title="Info 1" href="" coords="362,3053,561,3104" shape="0">

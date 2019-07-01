@@ -17,8 +17,8 @@
 	    <area target="" alt="Explore BD" title="Explore BD" href="<?php echo home_url( '/explore-binh-duong' ); ?>" coords="1171,53,1401,97,1361,71" shape="0">
 	    <area target="" alt="Wellness" title="Wellness" href="<?php echo home_url( '/wellness' ); ?>" coords="1415,53,1528,95" shape="0">
 	    <area target="" alt="BH Logo" title="BH Logo" href="<?php echo home_url( '/' ); ?>" coords="847,3676,1083,3782" shape="0">
-	    <area target="" alt="NC Logo" title="NC Logo" href="" coords="688,3789,825,3911" shape="0">
-	    <area target="" alt="TDM Logo" title="TDM Logo" href="" coords="833,3792,970,3908" shape="0">
+	    <area target="" alt="NC Logo" title="NC Logo" href="<?php echo home_url( '/newcity' ); ?>" coords="688,3789,825,3911" shape="0">
+	    <area target="" alt="TDM Logo" title="TDM Logo" href="<?php echo home_url( '/tdm' ); ?>" coords="833,3792,970,3908" shape="0">
 	    <area target="" alt="Coffe Logo" title="Coffe Logo" href="" coords="984,3792,1137,3908" shape="0">
 	    <area target="" alt="Square Logo" title="Square Logo" href="" coords="1147,3793,1256,3906,1226,3884" shape="0">
 	    <area target="" alt="Info 1" title="Info 1" href="" coords="356,3948,551,4009" shape="0">

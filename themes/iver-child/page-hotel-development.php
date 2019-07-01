@@ -17,8 +17,8 @@
 	    <area target="" alt="Explore BD" title="Explore BD" href="<?php echo home_url( '/explore-binh-duong' ); ?>" coords="1223,51,1453,95,1413,69" shape="0">
 	    <area target="" alt="Wellness" title="Wellness" href="<?php echo home_url( '/wellness' ); ?>" coords="1469,53,1596,93" shape="0">
 	    <area target="" alt="" title="" href="" coords="849,3418,1075,3538" shape="0">
-	    <area target="" alt="" title="" href="" coords="676,3546,825,3649" shape="0">
-	    <area target="" alt="" title="" href="" coords="839,3550,978,3649" shape="0">
+	    <area target="" alt="" title="" href="<?php echo home_url( '/newcity' ); ?>" coords="676,3546,825,3649" shape="0">
+	    <area target="" alt="" title="" href="<?php echo home_url( '/tdm' ); ?>" coords="839,3550,978,3649" shape="0">
 	    <area target="" alt="" title="" href="" coords="984,3552,1139,3651" shape="0">
 	    <area target="" alt="" title="" href="" coords="1147,3550,1260,3659" shape="0">
 	    <area target="" alt="" title="" href="" coords="366,3707,557,3770" shape="0">
@@ -26,6 +26,7 @@
 	    <area target="" alt="" title="" href="" coords="900,3711,1202,3756" shape="0">
 	    <area target="" alt="" title="" href="" coords="1260,3715,1590,3760" shape="0">
 	    <area target="" alt="" title="" href="" coords="785,3908,1145,3975" shape="0">
+	    <area target="" alt="SCroll up" title="SCroll up" href="#" coords="1829,3744,1904,3820" shape="rect">
 	</map>
 </body>
 <script type="text/javascript" src="<?php echo home_url('/wp-content/themes/iver-child/js/imageMapResizer.min.js'); ?>"></script>

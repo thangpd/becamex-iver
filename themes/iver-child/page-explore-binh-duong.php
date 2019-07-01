@@ -16,9 +16,9 @@
 	    <area target="" alt="Hotel Development" title="Hotel Development" href="<?php echo home_url( '/hotel-development' ); ?>" coords="972,29,1202,71" shape="0">
 	    <area target="" alt="Explore BD" title="Explore BD" href="<?php echo home_url( '/explore-binh-duong' ); ?>" coords="1219,27,1449,71,1409,45,1312,65" shape="0">
 	    <area target="" alt="Wellness" title="Wellness" href="<?php echo home_url( '/wellness' ); ?>" coords="1465,31,1592,71" shape="0">
-	    <area target="" alt="BH Logo footer" title="BH Logo footer" href="" coords="859,3912,1063,4011" shape="0">
-	    <area target="" alt="NC Logo" title="NC Logo" href="" coords="684,4031,815,4131" shape="0">
-	    <area target="" alt="TDM Logo" title="TDM Logo" href="" coords="837,4033,956,4133" shape="0">
+	    <area target="" alt="BH Logo footer" title="BH Logo footer" href="<?php echo home_url( '/' ); ?>" coords="859,3912,1063,4011" shape="0">
+	    <area target="" alt="NC Logo" title="NC Logo" href="<?php echo home_url( '/newcity' ); ?>" coords="684,4031,815,4131" shape="0">
+	    <area target="" alt="TDM Logo" title="TDM Logo" href="<?php echo home_url( '/tdm' ); ?>" coords="837,4033,956,4133" shape="0">
 	    <area target="" alt="Coffee logo" title="Coffee logo" href="" coords="974,4035,1137,4135" shape="0">
 	    <area target="" alt="Square logo" title="Square logo" href="" coords="1147,4033,1254,4135" shape="0">
 	    <area target="" alt="Info 1" title="Info 1" href="" coords="376,4200,568,4234" shape="0">
@@ -27,6 +27,7 @@
 	    <area target="" alt="Info 4" title="Info 4" href="" coords="1256,4196,1596,4246" shape="0">
 	    <area target="" alt="Social" title="Social" href="" coords="809,4407,1139,4451" shape="0">
 	    <area target="" alt="Tourism" title="Tourism" href="<?php echo home_url( '/explore-single' ); ?>" coords="12,3128,1912,3775" shape="0">
+	    <area target="" alt="SChroll up" title="SChroll up" href="#" coords="1833,4232,1902,4298" shape="rect">
 	</map>
 </body>
 <script type="text/javascript" src="<?php echo home_url('/wp-content/themes/iver-child/js/imageMapResizer.min.js'); ?>"></script>
