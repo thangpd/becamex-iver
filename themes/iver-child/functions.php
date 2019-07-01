@@ -24,14 +24,14 @@ if ( ! function_exists( 'template_redirect_demo' ) ) {
 
 		$blog_detail = get_blog_details( get_current_blog_id() );
 
-		if ( is_page( 'rooms' ) && preg_match( '#tdm/$#', $blog_detail->path ) ) {
+		if ( is_page( array('rooms','deals-packages','dining','experience','events','photos','news-blog') ) && preg_match( '#tdm/$#', $blog_detail->path ) ) {
 			$new_template = locate_template( array( 'template_tdm/page-tdm-template.php' ) );
 			if ( ! empty( $new_template ) ) {
 				return $new_template;
 			}
 		}
-		if ( is_page( 'about-us' ) && preg_match( '#tdm/$#', $blog_detail->path ) ) {
-			$new_template = locate_template( array( 'template_tdm/page-careers.php' ) );
+		if ( is_page( array('rooms','deals-packages','dining','experience','events','photos','news-blog') ) && preg_match( '#newcity/$#', $blog_detail->path ) ) {
+			$new_template = locate_template( array( 'template_tdm/page-tdm-template.php' ) );
 			if ( ! empty( $new_template ) ) {
 				return $new_template;
 			}
