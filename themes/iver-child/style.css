@@ -14,6 +14,11 @@ Template: iver
 	padding: 0 10px;
 }
 
+/* footer infos margin  */
+.qodef-page-footer .qodef-icon-widget-holder {
+	margin: 0 30px;
+}
+
 /* Separate line: icon - text; */
 .hospitality-corevalue-content 
 .qodef-iwt.qodef-iwt-icon-top 
@@ -29,7 +34,8 @@ Template: iver
 }
 
 /* Padding of core values content */
-.hospitality-corevalue-content .qodef-eh-item-content {
+.hospitality-corevalue-content
+.qodef-eh-item-content {
 	padding: 0 !important;
 	/*padding-left: 0 !important;
 	padding-right: 0 !important;*/
@@ -40,7 +46,7 @@ Template: iver
 */
 
 .hospitality-aboutus {
-	padding: 80px 93px;
+	padding: 80px 80px;
 }
 
 .hospitality-corevalue {
@@ -60,6 +66,15 @@ img {
 .hospitality-secondhome {
 	padding-top: 80px;
 	padding-bottom: 80px;
+}
+
+.hospitality-newcity-tdm h2 {
+	font-size: 30px;
+}
+
+.hospitality-newcity, 
+.hospitality-tdm {
+	padding-top: 60px;
 }
 
 .hospitality-comment-wrap {
@@ -92,7 +107,7 @@ img {
 	width: 100px;
 	max-height: 100px;
 	max-width: 100px;
-	margin-top: 25%;
+	margin: 25% auto 0 auto;
 }
 
 .hospitality-contactus {
@@ -100,11 +115,16 @@ img {
 	padding-bottom: 100px;
 }
 
+.hospitality-contactus-right p {
+	font-size: 15px;
+}
+
 .hospitality-footer-logos
 img {
 	display: inline !important;
 	margin-left: 20px;
 	margin-right: 20px;
+	height: 70px;
 }
 
 /*
@@ -113,7 +133,7 @@ img {
 
 @media (max-width: 1400px) {
 	.hospitality-aboutus-content {
-		font-size: 11px;
+		/*font-size: 11px;*/
 	}
 
 	.hospitality-aboutus {
@@ -123,7 +143,7 @@ img {
 	/* Space between infos below the 4 logos */
 	.qodef-page-footer
 	.qodef-icon-widget-holder {
-	margin: 0 30px;
+	margin: 0 15px;
 	}
 }
 
@@ -158,13 +178,20 @@ img {
 		width: 50%;
 		float: left;
 	}
-}
+
+	.hospitality-quote-image {
+		margin: 0 auto;
+	}
 
 @media (max-width: 667px){
 	.hospitality-contactus-right
 	.vc_column_container {
 		width: 100%;
 		float: left;
+	}
+
+	.hospitality-quote-image img {
+		width: 70px;
 	}
 }
 
